@@ -5,11 +5,9 @@ int main() {
 
   double a, b, d;
   char c;
-  printf
-    ("*********ÇëÊäÈëÒ»¸öËãÊıÊ½£¬ÏµÍ³½«×Ô¶¯°ïÄãÅĞ¶¨ÊÇ·ñÕıÈ·*********\n");
-  printf("   Ö§³Ö¼Ó£¬¼õ£¬³Ë£¬³ı£¬Ö¸Êı£¬ÇóÓà\n");
-  printf("ÇóÓàÖ»Ö§³ÖÕûÊı£¡£¡£¡\n");
-  printf("Input 'q' or 'Q' to quit!\n");
+  printf("*********Please Input an expression and calculate*********\n");
+  printf("For example: 3 + 2 = 5")
+  printf("Input 'q' or 'Q' to quit the exe!\n");
 
   do 
   {
@@ -21,47 +19,47 @@ int main() {
       switch (c) {
       case '+':
         if (d == a + b)
-          printf("¶ÔÁË£¬ÄãÕæ°ô£¡\n");
+          printf("å¯¹äº†ï¼Œä½ çœŸæ£’ï¼\n");
         else
-          printf("´íÁË£¬ÕıÈ·µÄ½á¹ûÊÇ%.1lfÅ¶¡£\n", d = a + b);
+          printf("é”™äº†ï¼Œæ­£ç¡®çš„ç»“æœæ˜¯%.1lfå“¦ã€‚\n", d = a + b);
          break;
       case '-':
         if (d == a - b)
-          printf("¶ÔÁË£¬ÄãÕæ°ô£¡\n");
+          printf("å¯¹äº†ï¼Œä½ çœŸæ£’ï¼\n");
         else
-          printf("´íÁË£¬ÕıÈ·µÄ½á¹ûÊÇ%.1lfÅ¶¡£\n", d = a - b);
+          printf("é”™äº†ï¼Œæ­£ç¡®çš„ç»“æœæ˜¯%.1lfå“¦ã€‚\n", d = a - b);
          break;
       case '*':
       case 'x':
       case 'X':
         if (d == a * b)
-          printf("¶ÔÁË£¬ÄãÕæ°ô£¡\n");
+          printf("å¯¹äº†ï¼Œä½ çœŸæ£’ï¼\n");
         else
-          printf("´íÁË£¬ÕıÈ·µÄ½á¹ûÊÇ%.1lfÅ¶¡£\n", d = a * b);
+          printf("é”™äº†ï¼Œæ­£ç¡®çš„ç»“æœæ˜¯%.1lfå“¦ã€‚\n", d = a * b);
         break;
       case '/':
         if (b != 0) {
           if (d == a / b)
-            printf("¶ÔÁË£¬ÄãÕæ°ô£¡\n");
+            printf("å¯¹äº†ï¼Œä½ çœŸæ£’ï¼\n");
           else
-            printf("´íÁË£¬ÕıÈ·µÄ½á¹ûÊÇ%.1lfÅ¶¡£\n", d = a / b);
+            printf("é”™äº†ï¼Œæ­£ç¡®çš„ç»“æœæ˜¯%.1lfå“¦ã€‚\n", d = a / b);
         } else
-          printf("ERROR£¡\n");
+          printf("ERRORï¼\n");
 
          break;
       case '^':
         if (d == pow(a, b))
-          printf("¶ÔÁË£¬ÄãÕæ°ô£¡\n");
+          printf("å¯¹äº†ï¼Œä½ çœŸæ£’ï¼\n");
         else
-          printf("´íÁË£¬ÕıÈ·µÄ½á¹ûÊÇ%.1lfÅ¶¡£\n", d = pow(a, b));
+          printf("é”™äº†ï¼Œæ­£ç¡®çš„ç»“æœæ˜¯%.1lfå“¦ã€‚\n", d = pow(a, b));
          break;
       case '%':
         if (d == (int)a % (int)b)
-          printf("¶ÔÁË£¬ÄãÕæ°ô£¡\n");
+          printf("å¯¹äº†ï¼Œä½ çœŸæ£’ï¼\n");
         else if (b == 0)
-          printf("ERROR£¡\n");
+          printf("ERRORï¼\n");
         else if (b != 0)
-          printf("´íÁË£¬ÕıÈ·µÄ½á¹ûÊÇ%.1lfÅ¶¡£\n", d =(int)a % (int)b);
+          printf("é”™äº†ï¼Œæ­£ç¡®çš„ç»“æœæ˜¯%.1lfå“¦ã€‚\n", d =(int)a % (int)b);
         break;
       }              /* switch */
 	  printf("Input 'q' or 'Q' to quit!\n");
